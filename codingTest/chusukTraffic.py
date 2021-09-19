@@ -1,3 +1,4 @@
+"""https://velog.io/@mrbartrns/%ED%8C%8C%EC%9D%B4%EC%8D%AC-1%EC%B0%A8%EC%B6%94%EC%84%9D-%ED%8A%B8%EB%9E%98%ED%94%BD-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%A0%88%EB%B2%A83"""
 def solution(lines):
     #끝시간2000초-1000 =1000밀리초
     #term=999밀리초면 1초안에 겹치는거임
