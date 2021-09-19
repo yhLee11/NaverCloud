@@ -19,7 +19,6 @@ def solution(lines):
         ans=max(ans,cnt)
     return ans
 
-    print(int(.008))
 def get_time(time):#대소비교를 하기 위해서 정수형 변환
     hour=int(time[:2])*3600#01*3600=3600
     minute=int(time[3:5])*60#00*60=0
