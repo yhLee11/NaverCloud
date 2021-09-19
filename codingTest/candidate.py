@@ -1,7 +1,6 @@
 from itertools import combinations as combi
 def solution(relation):
-    #최소성 각자 꼭 유일해야함 꼭 필요한 속성들로만 구성?
-    #이름전공학년에서 이름 빼면 유일성 충족 불가
+
     row=len(relation)
     col=len(relation[0])
     candi=[]
