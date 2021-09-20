@@ -7,7 +7,6 @@ def solution(m, musicinfos):
     info={}
     total=0
     m=shap_to_lower(m)
-
     for i in musicinfos:
         lst=i.split(',')
         start,end=list(map(int,lst[0].split(':'))),list(map(int,lst[1].split(':')))
@@ -23,20 +22,20 @@ def solution(m, musicinfos):
             print(music,len(music))
         info[lst[2]]=music
     print(info)
-    res=""
     ans=""
+    time=""
     for k,v in info.items():
         if m in v:
             if ans=="":
-                ans = k
-                res = v
+                ans=k
+                time=len(v)#처음것재생시간
             else:
-                if len(res) < len(v):
-                    ans = k
-                    res = v
+                if time<len(v):
+                    time=len(v)
+                    ans=k
 
-    print(res)
-    if res:
+    print(ans)
+    if ans:
         return ans
     else:
         return "(None)"
